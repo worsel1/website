@@ -1,0 +1,77 @@
+body{
+    background-color: #f1beff;
+    margin: 0px;
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0px;
+    background-color: white;
+}
+.block {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    line-height: 2;
+}
+img {
+    width: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.gallery-heading {
+    font-size: 36px;
+    margin: 40px 0 40px;
+    text-align: center;
+    width: 100%;
+    color: #8a3fd6;
+}
+.gallery-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.gallery-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.gallery-slide img {
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

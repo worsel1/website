@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="Styles/galleryStyles.css">
+    <script src="Scripts/gallery.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="block"><img src="FizzAndFunk.png" alt="FizzAndFunk"></div>
+        <a href="index.html"><div class="block">Homepage</div></a>
+        <a href="productsPage.html"><div class="block">Product page</div></a>
+        <a href="galleryPage.html"><div class="block">Gallery page</div></a>
+        <a href="blogPage.html"><div class="block">Blog page</div></a>
+        <a href="contactPage.html"><div class="block">Contact us</div></a>
+    </div>
+    <h1 class="gallery-heading">Photos of the week</h1>
+    <div class="gallery-container">
+        <div class="gallery-slide">
+            <img src="https://m.media-amazon.com/images/I/61Pe3ZNKh2L._AC_SL1000_.jpg" alt="Alligator socks">
+            <img src="https://m.media-amazon.com/images/I/81lqD8pIxqL._AC_UF1000,1000_QL80_.jpg" alt="Libary mug">
+            <img src="https://thegadgetflow.com/wp-content/uploads/2020/07/Unusual-coffee-mugs-you-may-never-have-seen-before-1200x675.jpg%22" alt="Donut mug">
+            <img src="https://persnicketyco.co.uk/cdn/shop/collections/Cactus_Pom_Pom_Gel_Pen_1200x1200.jpg?v=1601020858" alt="Cool pens">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+</body>
+</html>

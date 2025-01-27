@@ -1,0 +1,128 @@
+body {
+    background-color: #f1beff;
+    margin: 0;
+    display: flex;
+}
+.container {
+    display: flex;
+    width: 100%;
+}
+.sidebar {
+    width: 350px;
+    background-color: #4a2989;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+.categories {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.categories li {
+    margin: 100px 0;
+}
+.categories a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-style: bold;
+}
+.categories a:hover {
+    text-decoration: underline;
+}
+.main-content {
+    margin-left: 350px;
+    flex: 1;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0px;
+    background-color: white;
+}
+.block {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    line-height: 2;
+}
+img {
+    width: 50px;
+}
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+    padding-left: 50px;
+}
+.product-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+    height: 500px;
+    text-align: center;
+    margin-right: 50px;
+}
+.price {
+    font-size: 20px;
+    color: #333;
+}
+.description {
+    font-size: 16px;
+    color: #000;
+}
+.ingredients, .nutrition, .dietary {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+.add-to-cart {
+    margin-top:30px;
+    padding: 20px 100px;
+    background-color: #4a2989;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+}
+.add-to-cart:hover {
+    background-color: #3a2069;
+}
+p {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 65px;
+}
+.cart-container {
+    margin-top: 20px;
+}
+.cart-container h2 {
+    font-size: 24px;
+    color: #4a2989;
+}
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+#cart-items li {
+    background-color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+#total-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
