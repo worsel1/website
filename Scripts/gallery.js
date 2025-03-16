@@ -9,7 +9,7 @@ function showSlide(index) {
     } else {
         slideIndex = index;
     }
-    const offset = -slideIndex * 100;
+    const offset = -slideIndex * 105;
     document.querySelector('.gallery-slide').style.transform = `translateX(${offset}%)`;
 }
 
